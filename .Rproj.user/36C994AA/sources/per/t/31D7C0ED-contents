@@ -1,0 +1,10 @@
+library(aod)
+library(ggplot2)
+mydata <- read.csv("https://stats.idre.ucla.edu/stat/data/binary.csv")
+## view the first few rows of the data
+head(mydata)
+
+rank <- saveRDS(mydata,file = "rank_data")
+fil <- "rank_data.rds"
+load_data <- readRDS(fil)
+head(load_data)

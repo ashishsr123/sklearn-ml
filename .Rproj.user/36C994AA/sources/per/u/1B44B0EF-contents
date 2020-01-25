@@ -1,0 +1,19 @@
+library(haven)
+test <- read_sas("DCSKINPRODUCT.sas7bdat")
+
+test_rds_file <- saveRDS(test)
+
+spark_write_avro(test)
+#test2 <- read_sas("pricedata.sashdat")
+
+typeof(test)
+data <- c('Javier\'s Deep Cleansing Hair Shampoo 2.718 dl
+','Cary',19440,0,0)
+write_sas(data, "q.sas7bdat")
+df <- read.csv("iris-feb.csv")
+spark_write_avro(df)
+df.write.format("avro").save("person.avro")
+
+str <- file_path_sans_ext("ABCD.fst")
+file_name <- paste0(str,".csv")
+file_name

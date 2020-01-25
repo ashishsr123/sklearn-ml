@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1578638579798.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "189123233",
+    "id" : "31D7C0ED",
+    "lastKnownWriteTime" : 1570104106,
+    "last_content_update" : 1570104106,
+    "path" : "~/r_formats/logit_poc.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "2,10",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,40 @@
+---
+title: "Logit_model"
+author: "Ashish"
+date: "November 27, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+mydata <- read.csv("https://stats.idre.ucla.edu/stat/data/binary.csv")
+## view the first few rows of the data
+head(mydata)
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(mydata)
+```
+
+```{r}
+mydata$rank <- factor(mydata$rank)
+mylogit <- glm(admit ~ gre + gpa + rank, data = mydata, family = "binomial")
+summary(mylogit)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+https://stackoverflow.com/questions/16347507/obtaining-threshold-values-from-a-roc-curve
+https://stackoverflow.com/questions/28719067/roc-curve-and-cut-off-point-python
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

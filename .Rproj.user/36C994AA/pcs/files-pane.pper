@@ -1,0 +1,17 @@
+{
+    "path" : "~/r_formats",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 1
+        },
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
